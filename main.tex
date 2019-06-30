@@ -1,0 +1,67 @@
+\documentclass[oneside,12pt,pdftex]{Classes/uitBA}
+\usepackage{mathptmx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{enumitem}
+
+\addto\captionsenglish{\renewcommand{\chaptername}{Phần}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Mục lục}}
+
+  \university{{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\\
+               ĐẠI HỌC CÔNG NGHỆ THÔNG TIN}}
+  \collegeordept{Phòng Đào tạo Sau đại học - Khoa học công nghệ}  
+  \title{} 
+  \supervisor{{}}
+  \author{}  
+             
+  \degreedate{TP. Hồ Chí Minh - tháng 11/2018}
+\hbadness=10000
+\hfuzz=50pt
+\usepackage{StyleFiles/watermark}
+\onehalfspacing
+
+\usepackage{amsmath}
+
+% Chaper format
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]
+{\normalfont\Large\bfseries}{\MakeUppercase\chaptertitlename\ \thechapter : }{0pt}{\Large\MakeUppercase}
+\titlespacing*{\chapter}{0pt}{-80pt}{20pt}
+
+% Định nghĩa
+\newtheorem{dn}{Định nghĩa}
+
+% Table -> bảng
+\usepackage{caption}
+\captionsetup[table]{name=Bảng}
+
+\begin{document}
+% \maketitle
+
+\includepdf[pages={1}, scale=1]{cover.pdf}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\frontmatter % book mode only
+\pagenumbering{roman}
+
+\tableofcontents
+
+\mainmatter  
+
+\include{chuong_1}
+\include{chuong_2}
+\include{chuong_3}
+\include{chuong_4}
+\include{chuong_5}
+% \include{chuong_6}
+ 
+\bibliographystyle{unsrt} % bibliography style
+\renewcommand{\bibname}{Tài liệu tham khảo} % changes default name Bibliography to References
+\bibliography{ref} % References file
+
+\end{document}

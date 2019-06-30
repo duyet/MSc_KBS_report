@@ -1,0 +1,66 @@
+\chapter{Cở sở lý thuyết}
+
+
+\section{Ontology}
+    \subsection{Ontology là gì?}
+    
+    
+Các cơ sở lý thuyết về Ontology được đề cập nhiều trong các tài liệu \cite{mcguinness2004owl}\cite{maedche2001ontology}\cite{berners2001semantic}\cite{thanh2014ontology}\cite{kiem1997mang}.
+    
+   Thuật ngữ "Ontology" dã xuất hiện từ rất sớm. Trong cuốn sách "Siêu hình"
+Metaphysics\cite{taylor1963metaphysics}) của mình, Aristotle đã định nghĩa: "Ontology là một nhánh của triết
+học, liên quan đến sự tồn tại và bản chất các sự vật trong thực tế". Hay nói cách
+khác, đối tượng nghiên cứu chủ yếu của Ontology, xoay quanh viêc phân loại các sự vật dựa trên các đặc điểm mang tính bản chất của nó. Ontology là một thuật ngữ
+mượn từ triết học đuợc tạm dịch là "bản thể học", nhằm chỉ khoa học mô tả các loại
+thực thể trong thế giới thực và cách chúng liên kết với nhau. 
+
+Trong ngành khoa học máy tính và khoa học thông tin, Ontology mang ý nghĩa là các khái niệm lớp đối tượng và quan hệ giữa chúng trong một hệ thống hay ngữ cảnh cần quan tâm. Các khái niệm lớp đối tượng này này còn được gọi là các khái niệm, các thuật ngữ hay các bộ từ vựng có thể được sử dụng trong một
+lĩnh vực chuyên môn nào đó. Ontology cũng có thể hiểu là một ngôn ngữ hay một tập các quy tắc được dùng để xây dựng một hệ thống Ontology. Một hệ thống
+Ontology định nghĩa một tập các từ vựng mang tính phổ biến trong lĩnh vực chuyên môn nào đó và các mối quan hệ giữa chúng. Sự định nghĩa này có thể được hiểu
+bởi cả con người lẫn máy tính. Một cách khái quát, có thể hiệu Ontology là một biển diện của sự khái niệm hoá thống nhất được chia sẻ của một miền tri thức hay
+một lĩnh vực nhất định. Nó cung cấp một bộ từ vựng chung bao gồm các khái niệm.
+
+Các thuộc tính quan trọng và các định nghĩa về các khái niệm và các thuộc tính này.
+Ngoài bộ từ vựng, Ontology còn cung cấp các ràng buộc, đôi khi các ràng buộc này được coi như các giả định cơ sở vệ ý nghĩa mong muốn của bộ từ vựng, nó được sử dụng trong một lĩnh vực mà có thể được giao tiếp giữa người và các hệ thống ứng dựng phân tán khác.
+
+Một Ontology bao gồm các thành phần như sau:
+\begin{itemize}
+    \item Các cá thể (individials): các thực thể hoặc các đối tượng.
+    \item Các lớp (classes): các tập hợp, các bộ sưu tập, các khái niệm, các loại đối tượng hoặc các loại khác.
+    \item Các thuộc tính (attributes): các khía cạnh, đặc tính, tính năng, đặc điểm hoặc các thông số mà các đối tượng và các lớp có thể có.
+    \item Các quan hệ (relations): cách thức mà các lớp và các cá thể có thể liên kết với nhau.
+    \item Các thuật ngữ chức năng (function terms): cấu trúc phức tạp được hình thành từ các mối quan hệ nhất định có thể được sử dụng thay cho một thuật ngữ cá thể trong một statement.
+    \item Các hạn chế (restrictions): những mô tả chính thức được tuyên bố về những điều phải chính xác cho một số khẳng định được chấp nhận ở đầu vào.
+    \item Các quy tắc (rules): một cặp nếu-thì (if-then) mô tả suy luận logic có thể được rút ra từ một khẳng định trong từng hình thức riêng.
+    \item Các tiên đề (axioms): các khẳng định (bao gồm các quy tắc) trong một hình thức hợp lý với nhau bao gồm các lý thuyết tổng thể mà otology mô tả trong lĩnh vực của ứng dụng.
+    \item Các sự kiện (events): sự thay đổi các thuộc tính hoặc các mối quan hệ.
+\end{itemize}
+    
+    \subsection{Các phương pháp xây dựng Ontology}
+
+Có nhiều phương pháp khác nhau để xây dựng một Ontology, nhưng nhìn chung các phương pháp đều thực hiện hai bước cơ bản là: xây dựng cấu trúc lớp phân cấp và định nghĩa các thuộc tính cho lớp. Trong thực tế, việc phát triên một Ontology để mô tả lĩnh vực cần quan tâm là một công việc không đơn giản, phụ thuộc rất nhiều vào công cụ sử dụng, tính chất, quy mô, sự thường xuyên biến đổi của miền cũng như các quan hệ phức tạp trong đó. 
+
+Những khó khăn này đòi hỏi công việc xây dựng Ontology phải là một quả trình lặp di lặp lại, mỗi lần lặp cải thiện, tinh chế và phát triển dần sản phẩm chứ không phải là một quy trình khung với các công đoạn tách rời nhau. Công việc xây dựng Ontology cũng cân phải tính dên khả năng mờ rộng lĩnh vực quan tâm trong tương lai, khả năng kế thừa các hệ thống Ontology có sẵn, cũng như tinh chỉnh để Ontology có khả năng mô tả tôt nhất các quan hệ phức tạp trong thế giới thực.
+
+Một số nguyên tắc cơ bản của việc xây dựng Ontology thông qua các công đoạn sau đây:
+
+\begin{itemize}
+    \item Xác định miền quan tâm và phạm vi của Ontology.
+    \item Xem xét việc kế thừa các Ontology có sẵn.
+    \item Liệt kê các thuật ngữ quan trọng trong Ontology.
+    \item Xây dựng các lớp và cấu trúc lớp phân cấp.
+    \item Định nghĩa các ràng buộc về thuộc tính và quan hệ của lớp.
+    \item Tạo các thực thể cho lớp.
+\end{itemize}
+
+
+
+\section{Hệ thống tìm kiếm thông tin}
+
+Mục tiêu của hệ thống tìm kiếm thông tin và tìm kiếm và đưa ra các thông tin liên quan nhất đến cho người dùng. Các hệ thống này có nhiệm vụ tổ chức, phân loại tài liệu và phục vụ tra cứu. 
+
+Cấu trúc của một hệ thống tìm kiếm thông tin:
+\begin{itemize}
+    \item Lập chỉ mục (indexing): phân tích tài liệu nhằm xác định các chỉ mục biểu diễn nội dung của tài liệu. Có hai cách: (1) lập chỉ mục từ cấu trúc phân lớp có sẵn và (2) rút trích chỉ mục từ nội dung có trong kho tài liệu.
+    \item Tra cứu (interrogation): hệ thống nhận yêu cầu từ người dùng thông qua câu truy vấn (query). Hệ thống tiến hành phân tích và biểu diễn sau đó qua một hàm so khớp để tìm ra tài liệu liên quan.
+\end{itemize}
